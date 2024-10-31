@@ -1,0 +1,1 @@
+jQuery(document).ajaxStart(function(){jQuery("#loading").show()});jQuery(document).ajaxStop(function(){jQuery("#loading").hide()});function jsSaveConfigValue(b,c,a){jQuery.ajax({url:omnitags_key_value.ajaxurl,method:"POST",data:{action:omnitags_key_value.action,nonce:omnitags_key_value.nonce,field_key:b,value:c,wp_hook:a},dataType:"json"}).fail(function(d){alert(d)})};

@@ -1,0 +1,197 @@
+[
+  {
+    "ID": "seo",
+    "name": "SEO",
+    "isActive": "true",
+    "services": [
+      {
+        "name": "Google Search Console verification tag",
+        "description": "Verification is the process of proving that you own the site or app that you claim to own. We need to confirm ownership because once you are verified for a site or app you have access to its private Google Search data, and can affect how Google Search crawls it.",
+        "url": "https://www.google.com/webmasters",
+        "params": [
+          {
+            "ID": "google_search_console_verification_meta",
+            "name": "HTML meta tag",
+            "field_key": "google_search_console_verification_meta",
+            "field_type": "text",
+            "placeholder": "<meta name=\"google-site-verification\" content=\"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\" />",
+            "wp_hook": ";wp_head;"
+          }
+        ]
+      },
+      {
+        "name": "Bing Webmaster Tools verification",
+        "description": "To complete the addition of a new site to your account, you need to verify that you own the site by proving ownership.",
+        "url": "https://www.bing.com/webmaster",
+        "params": [
+          {
+            "ID": "bing_webmaster_tools_verification_meta",
+            "name": "HTML meta tag",
+            "field_key": "bing_webmaster_tools_verification_meta",
+            "field_type": "text",
+            "placeholder": "<meta name=\"msvalidate.01\" content=\"XXXXXXXXXXXXXXXXXXXXXXXXXX\" />",
+            "wp_hook": ";wp_head;"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "analytics",
+    "name": "Analytics",
+    "isActive": "false",
+    "services": [
+      {
+        "name": "Google Analytics",
+        "description": "Google Analytics gives you the digital analytics tools you need to analyze data from all touchpoints in one place, for a deeper understanding of the customer experience.",
+        "url": "https://www.google.com/analytics/",
+        "params": [
+          {
+            "ID": "google_analytics_tracking_ID",
+            "name": "Tracking ID",
+            "field_key": "google_analytics_tracking_id",
+            "field_type": "text",
+            "placeholder": "UA-XXXXXXXX-X",
+            "wp_hook": ";wp_head;"
+          }
+        ]
+      },
+      {
+        "name": "Piwik",
+        "description": "Open-source analytics platform.",
+        "url": "https://piwik.org",
+        "params": [
+          {
+            "ID": "piwik_url",
+            "name": "Installation Url",
+            "field_key": "piwik_url",
+            "field_type": "text",
+            "placeholder": "https://",
+            "wp_hook": ";wp_head;;wp_print_footer_scripts;"
+          },
+          {
+            "ID": "piwik_ID_site",
+            "name": "Site ID",
+            "field_key": "piwik_site_id",
+            "field_type": "number",
+            "placeholder": "",
+            "wp_hook": ";wp_head;;wp_print_footer_scripts;"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "crm",
+    "name": "CRM and Live Chat services",
+    "isActive": "false",
+    "services": [
+      {
+        "name": "HubSpot",
+        "description": "HubSpot offers a full stack of software for marketing, sales, and customer success, with a completely free CRM at its core.",
+        "url": "https://www.hubspot.com",
+        "params": [
+          {
+            "ID": "HubSpot_Account_Number",
+            "name": "Account number (Hub ID)",
+            "field_key": "HubSpot_Account_Number",
+            "field_type": "number",
+            "placeholder": "",
+            "wp_hook": ";wp_print_footer_scripts;"
+          },
+          {
+            "ID": "HubSpot_script",
+            "name": "or paste full code",
+            "field_key": "HubSpot_script",
+            "field_type": "textarea",
+            "placeholder": "<script> ... </script>",
+            "wp_hook": ";wp_print_footer_scripts;"
+          }
+        ]
+      },
+      {
+        "name": "GetSiteControl",
+        "description": "Perfect widgets for your website: surveys, lead forms, contact forms, live chats, popups, social media buttons.",
+        "url": "https://getsitecontrol.com/",
+        "params": [
+          {
+            "ID": "GetSiteControl_site_ID",
+            "name": "Website ID",
+            "field_key": "GetSiteControl_site_ID",
+            "field_type": "number",
+            "placeholder": "",
+            "wp_hook": ";wp_print_footer_scripts;"
+          },
+          {
+            "ID": "GetSiteControl_script",
+            "name": "or paste full code",
+            "field_key": "GetSiteControl_script",
+            "field_type": "textarea",
+            "placeholder": "<script> ... </script>",
+            "wp_hook": ";wp_print_footer_scripts;"
+          }
+        ]
+      },
+      {
+        "name": "Smartsupp",
+        "description": "Live chat with video recording of visitors. Your customers are on your website right now. Chat with them and see what they do.",
+        "url": "https://www.smartsupp.com/",
+        "params": [
+          {
+            "ID": "Smartsupp_key",
+            "name": "Key",
+            "field_key": "Smartsupp_key",
+            "field_type": "text",
+            "placeholder": "XXXXXXXXXXXXXXXXXXXXXX",
+            "wp_hook": ";wp_print_footer_scripts;"
+          },
+          {
+            "ID": "GetSiteControl_script",
+            "name": "or paste full code",
+            "field_key": "Smartsupp_script",
+            "field_type": "textarea",
+            "placeholder": "<script> ... </script>",
+            "wp_hook": ";wp_print_footer_scripts;"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "custom",
+    "name": "Custom tags",
+    "isActive": "false",
+    "services": [
+      {
+        "name": "Custom tag 1 (HEAD)",
+        "description": "This code will be inserted in source HTLM HEAD section.",
+        "url": "",
+        "params": [
+          {
+            "ID": "custom_tag_1_script",
+            "name": "Custom code",
+            "field_key": "custom_tag_1_script",
+            "field_type": "textarea",
+            "placeholder": "",
+            "wp_hook": ";wp_print_footer_scripts;"
+          }
+        ]
+      },
+      {
+        "name": "Custom tag 2 (before &lt;/BODY&gt;)",
+        "description": "This code will be inserted before the &lt;/BODY&gt; tag of the source code.",
+        "url": "",
+        "params": [
+          {
+            "ID": "custom_tag_2_script",
+            "name": "Custom code",
+            "field_key": "custom_tag_2_script",
+            "field_type": "textarea",
+            "placeholder": "",
+            "wp_hook": ";wp_print_footer_scripts;"
+          }
+        ]
+      }
+    ]
+  }
+]
